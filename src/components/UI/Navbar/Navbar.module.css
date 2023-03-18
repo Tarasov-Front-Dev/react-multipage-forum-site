@@ -28,3 +28,15 @@
   box-shadow: 0 0 3px 1px grey;
   color: initial
 }
+
+.logout {
+  padding: 5px 10px;
+  text-decoration: none;
+  border: 1px solid red;
+  border-radius: 4px;
+  color: red;
+}
+
+.logout:hover {
+  background-color: rgba(255, 68, 0, 0.181);
+}
