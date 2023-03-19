@@ -36,3 +36,6 @@ Site fetch posts from remote database, sort it and show you in selected order. Y
  - Sort posts by title, body or id (jsonplaceholder didn't provide date at their posts, but I made sort by post.date as well).
  - Let you write your own post, like some or delete them.
  - You can click on post and see it's comment section.
+
+N.B. GitHub doesn't provide correct support for Routes so you can download project and run it on your own PC to make sure that everything works just fine!
+Don't forget to delete homepage prop from package.json. It was added only for GitHub-pages.
