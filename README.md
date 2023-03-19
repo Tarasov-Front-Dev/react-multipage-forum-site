@@ -29,6 +29,7 @@ Site fetch posts from remote database, sort it and show you in selected order. Y
     - `PostItem`
     - `PostList`
  - One PostSevice API.
+ - Pagination, transitions, and other fancy and stylish features.
  
 ## Project futures
  - Log you in and remember you (by Context.Provider). So you'll stay logged in even if you reload the page.
