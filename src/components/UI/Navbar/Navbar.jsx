@@ -14,8 +14,8 @@ const MyNavbar = () => {
   return (
     <div className={css.navbar}>
       <div className={css.navbar__links}>
-        <Link to='/about'>About</Link>
         <Link to='/posts'>Posts</Link>
+        <Link to='/about'>About</Link>
       </div>
       {isAuth
         ? <Link
