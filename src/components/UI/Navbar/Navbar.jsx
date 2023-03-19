@@ -14,12 +14,12 @@ const MyNavbar = () => {
   return (
     <div className={css.navbar}>
       <div className={css.navbar__links}>
-        <Link to='/about'>About</Link>
-        <Link to='/posts'>Posts</Link>
+        <Link to='react-multipage-forum-site/about'>About</Link>
+        <Link to='react-multipage-forum-site/posts'>Posts</Link>
       </div>
       {isAuth
         ? <Link
-            to='/posts' 
+            to='react-multipage-forum-site/login' 
             onClick={logout}
             className={css.logout}
           >LogOut</Link>
