@@ -34,5 +34,5 @@ Site fetch posts from remote database, sort it and show you in selected order. Y
  - Log you in and remember you (by Context.Provider). So you'll stay logged in even if you reload the page.
  - Fetch posts from [https://jsonplaceholder.typicode.com/].
  - Sort posts by title, body or id (jsonplaceholder didn't provide date at their posts, but I made sort by post.date as well).
- - Let you write your own post, like others or delete them.
+ - Let you write your own post, like some or delete them.
  - You can click on post and see it's comment section.
