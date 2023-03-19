@@ -10,8 +10,8 @@ export const privateRoutes = [
   {path: '/about', element: <About/>},
   {path: '/posts', element: <Posts/>},
   {path: '/posts/:id', element: <PostIdPage/>},
-  // {path: '/*', element: <Posts/>},
-  {path: '/*', element: <Error/>},
+  {path: '/*', element: <Navigate to='/posts' replace={true}/>},
+  // {path: '/*', element: <Error/>},
 ]
 
 export const publicRoutes = [
