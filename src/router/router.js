@@ -9,7 +9,8 @@ export const privateRoutes = [
   {path: '/about', element: <About/>},
   {path: '/posts', element: <Posts/>},
   {path: '/posts/:id', element: <PostIdPage/>},
-  {path: '/*', element: <Error/>},
+  {path: '/*', element: <Posts/>},
+  // {path: '/*', element: <Error/>},
 ]
 
 export const publicRoutes = [
