@@ -25,6 +25,7 @@ const PostIdPage = function() {
   })
 
   useEffect(() => {
+    console.log(params)
     fetchPostById(params.id)
     fetchComments(params.id)
   }, [])

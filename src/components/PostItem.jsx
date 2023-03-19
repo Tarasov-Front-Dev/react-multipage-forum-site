@@ -38,7 +38,7 @@ const PostItem = function(props) {
 
   const openPost = (e) => {
     if (e.target.tagName === 'BUTTON') return;
-    navigate(`/posts/${props.post.id}`)
+    navigate(`react-multipage-forum-site/posts/${props.post.id}`)
   }
 
 
