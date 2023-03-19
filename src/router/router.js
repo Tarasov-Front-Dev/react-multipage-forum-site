@@ -5,14 +5,14 @@ import Error from "../pages/Error";
 import Login from "../pages/Login";
 
 export const privateRoutes = [
-  {path: '/', element: <Login/>},
-  {path: '/about', element: <About/>},
-  {path: '/posts', element: <Posts/>},
-  {path: '/posts/:id', element: <PostIdPage/>},
-  {path: '/*', element: <Error/>},
+  {path: 'tarasov-front-dev.github.io/', element: <Login/>},
+  {path: 'tarasov-front-dev.github.io/about', element: <About/>},
+  {path: 'tarasov-front-dev.github.io/posts', element: <Posts/>},
+  {path: 'tarasov-front-dev.github.io/posts/:id', element: <PostIdPage/>},
+  {path: 'tarasov-front-dev.github.io/*', element: <Error/>},
 ]
 
 export const publicRoutes = [
-  {path: '/login', element: <Login/>},
-  {path: '/*', element:<Login/>}
+  {path: 'tarasov-front-dev.github.io/login', element: <Login/>},
+  {path: 'tarasov-front-dev.github.io/*', element:<Login/>}
 ]
