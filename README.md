@@ -1,6 +1,6 @@
 # Multipage forum site created by using React
 
-Site fetchs posts from remote database, sort it and present in selected order. You can like post, remove it or add your own. Also you can click on post and see post comments.
+Site fetchs posts from remote database, sorts it and presents in selected order. You can like post, remove it or add your own. Also you can click on post and see post comments.
 
 ## In project was used
 
