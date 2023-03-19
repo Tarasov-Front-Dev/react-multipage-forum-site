@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-multipage-forum-site/static/css/main.e4f5bbb8.css",
-    "main.js": "/react-multipage-forum-site/static/js/main.e18055a3.js",
+    "main.css": "/react-multipage-forum-site/static/css/main.2d532f0a.css",
+    "main.js": "/react-multipage-forum-site/static/js/main.30748376.js",
     "index.html": "/react-multipage-forum-site/index.html",
-    "main.e4f5bbb8.css.map": "/react-multipage-forum-site/static/css/main.e4f5bbb8.css.map",
-    "main.e18055a3.js.map": "/react-multipage-forum-site/static/js/main.e18055a3.js.map"
+    "main.2d532f0a.css.map": "/react-multipage-forum-site/static/css/main.2d532f0a.css.map",
+    "main.30748376.js.map": "/react-multipage-forum-site/static/js/main.30748376.js.map"
   },
   "entrypoints": [
-    "static/css/main.e4f5bbb8.css",
-    "static/js/main.e18055a3.js"
+    "static/css/main.2d532f0a.css",
+    "static/js/main.30748376.js"
   ]
 }
