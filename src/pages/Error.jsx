@@ -3,7 +3,7 @@ import React from 'react';
 const Error = function() {
   return(
     <h1 style={{textAlign: 'center'}}>
-      404. Page is not here..
+      Wrong page url. Try to use links at navigation menu.
     </h1>
   )
 }

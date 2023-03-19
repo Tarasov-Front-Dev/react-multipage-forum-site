@@ -5,8 +5,15 @@
 }
 
 body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* font-family: Helvetica, Arial, sans-serif; */
   padding: 8px;
-  overflow-y: scroll;
+  color: #121212;
+  /* overflow-y: scroll; */
 }
 
 hr {
@@ -14,10 +21,47 @@ hr {
   margin: 40px 0;
 }
 
+textarea,
+input,
+button,
+select {
+  font-size: 1rem;
+  font-family: inherit;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.2), 0 1px 2px hsla(0, 0%, 0%, 0.2);
+  background-color: white;
+  line-height: 1.5;
+  margin: 0;
+}
+
+button {
+  color: #3992ff;
+  font-weight: 500;
+}
+
+textarea:hover,
+input:hover,
+button:hover,
+select {
+  box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.6), 0 1px 2px hsla(0, 0%, 0%, 0.2);
+}
+
+button:active {
+  box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.4);
+  transform: translateY(1px);
+}
+
+
+/**************** App ****************/
+
 .App {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  align-self: center;
+  max-width: 600px;
 }
 
 
@@ -50,6 +94,8 @@ form button {
   margin-right: -1px;
 }
 
+
+
 /*************** Form ****************/
 
 form {
@@ -60,7 +106,6 @@ form {
 }
 
 form input {
-  width: 500px;
   margin: 3px 0;
   padding: 0 10px;
   line-height: 2em;
@@ -78,11 +123,12 @@ form button {
 }
 
 form button:hover {
-  background-color: rgba(34, 154, 34, 0.7);
+  box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.6), 0 1px 2px hsla(0, 0%, 0%, 0.2);
 }
 
 form button:active {
-  background-color: rgba(6, 115, 6, 0.7);
+  box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.4);
+  transform: translateY(1px);
 }
 
 
@@ -94,52 +140,65 @@ main {
   align-items: center;
 }
 
+
 /*************** Posts ****************/
 
 .App .PostList h1 {
+  margin-top: 25px;
   text-align: center;
 }
 
 .App button[name="new-post"]{
+  width: 100%;
   margin-top: 15px;
   margin-bottom: 15px;
-  width: 500px;
 }
 
 .App .postFilter {  
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
+  justify-content: space-between;
   align-items: center;
-}
-
-.App .sorting {
-  align-self: flex-end;
-  margin-top: 5px;
+  width: 100%;
 }
 
 .App .sorting select {
-  height: 1.5em;
+  margin: 3px 0 3px 0;
+  padding: 0 10px;
+  height: 32px;
+  color: grey;
 }
 
 .post {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  width: 500px;
   padding: 15px;
   margin-bottom: 20px;
-  border: 2px solid teal;
+  border: 2px solid whitesmoke;
+  border-radius: 20px;
+  box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.2), 0 1px 2px hsla(0, 0%, 0%, 0.2);
+}
+
+.post:hover {
+  box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.6), 0 1px 2px hsla(0, 0%, 0%, 0.2);
+}
+
+.post:active {
+  box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.4);
+  transform: translateY(1px);  
 }
 
 .post--fav {
   border-color: orangered;
+  box-shadow: 0 0px 1px orangered, 0 1px 2px orangered;
 }
 
 .post .like {
   position: absolute;
-  top: -19px;
-  right: -12px;
-  font-size: 30px;
+  top: -12px;
+  right: -1px;
+  font-size: 20px;
   text-align: center;
   cursor: pointer;
 }
@@ -175,35 +234,43 @@ main {
 .post__btns > button {
   height: 30px;
   min-width: 80px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   padding: 0 15px;
   background-color: transparent;
-  border: 1px solid grey;
+  border: 1px solid rgb(229, 229, 229);
   border-radius: 5px;
-  color: grey;
+  color: rgb(151, 151, 151);
   cursor: pointer;
 }
 
-.post__btns > button:hover {
+.post__btns > button.remove:hover {
   background-color: rgba(128, 128, 128, 0.15);
 }
 
 .post__btns > button.upvote {
-  border-color: orangered;
-  color: orangered;
-  background-color: gold;
+  border-color: rgba(255, 68, 0, 0.9);
+  color: rgba(255, 68, 0, 0.9);
   font-weight: bold;
 }
 
 .post__btns > button.upvote:hover {
-  background-color: rgb(255, 233, 108);
+  box-shadow: 0 0px 2px rgba(255, 68, 0, 0.6), 0 2px 3px rgba(255, 68, 0, 0.2);
+  
 }
+
+.post__btns > button.upvote:active {
+  box-shadow: 0 0px 1px rgba(255, 68, 0, 0.4);
+  transform: translateY(1px);
+  
+}
+
 
 .post__id {
   font-size: small;
   font-style: italic;
   color: grey;
 }
+
 
 /*************** Pagination ****************/
 
@@ -217,14 +284,11 @@ main {
   margin-right: 4px;
   padding: 2px 7px;
   color: rgb(0, 43, 43);
-  border: 1px solid teal;
-  border-radius: 3px;
   cursor: pointer;
 }
 
 .pagination span:hover {
-  background-color: rgba(0, 128, 128, 0.156);
-  /* box-shadow: 0 0 5px rgba(0, 128, 128, 0.5); */
+  text-decoration: overline;
 }
 
 .pagination span.current {
@@ -250,4 +314,63 @@ main {
   opacity: 0;
   transform: translateX(-600px);
   transition: all 500ms ease-in;
+}
+
+
+/*************** Login ********************/
+.login__container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 90vh;
+}
+
+.login__container h1 {
+  margin-bottom: 10px;
+}
+
+.login__container input {
+  margin-top: 10px;
+}
+
+.login__container :last-child {
+  margin-top: 10px;
+}
+
+
+/************* Post Section ************/
+
+.post__id__page {
+  max-width: 600px;
+  margin: 15px auto;
+}
+
+.post__id__page > * {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid whitesmoke;
+  border-radius: 20px;
+  box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.2), 0 1px 2px hsla(0, 0%, 0%, 0.2);
+}
+
+.post__section h1 {
+  margin-bottom: 10px;
+}
+
+.comment__section h2 {
+  margin-bottom: 10px;
+}
+
+.comments > div {
+  margin-bottom: 10px;
+}
+
+/*********** About ***********/
+
+.about__h1 {
+  margin-top: 25px;
+  text-align: center;
+  color: grey;
 }

@@ -13,12 +13,12 @@ const Login = () => {
   }
 
   return (
-    <div>
+    <div className="login__container">
       <h1>Login page</h1>
       <form onSubmit={login}>
         <MyInput type="text" placeholder='Login'/>
         <MyInput type="text" placeholder='Password'/>
-        <div style={{width: 500}}>
+        <div>
           <MyButton>Login</MyButton>
         </div>
       </form>

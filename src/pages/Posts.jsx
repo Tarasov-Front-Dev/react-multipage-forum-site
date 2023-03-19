@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import './Posts.css';
 import Counter from './../components/Counter';
 import PostForm from './../components/PostForm';
 import PostFilter from './../components/PostFilter';
@@ -68,20 +67,20 @@ const Posts = function() {
           setFilter={setFilter}
           options={options}
         />
-        <MyPagination
-          totalPages={totalPages}
-          page={page}
-          setPage={setPage}
-        />
         {postError && <h1>Error: {postError}</h1>}
         {isPostsLoading
           ? <MyLoader/>
           : <PostList
             posts = {searchedAndSortedPosts}
-            title = 'JavaScript'
+            title = 'Topic title'
             remove={removePost}
             />
         }
+        <MyPagination
+          totalPages={totalPages}
+          page={page}
+          setPage={setPage}
+        />
       </main>
     </div>
   )

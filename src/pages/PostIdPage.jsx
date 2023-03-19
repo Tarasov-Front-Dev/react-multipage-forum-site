@@ -25,32 +25,29 @@ const PostIdPage = function() {
   })
 
   useEffect(() => {
-    console.log(params)
     fetchPostById(params.id)
     fetchComments(params.id)
   }, [])
 
   return(
-    <div>
+    <div className='post__id__page'>
       {isLoading
         ? <MyLoader/>
-        : <div>
-            <div className='post__section'>
-              <h1>Post:</h1>
-              <h2>{postTitle}</h2>
-              <div style={{marginTop: '15px'}}>{postBody}</div>
-            </div>
-        </div>
+        : <div className='post__section'>
+            <h1>Post:</h1>
+            <h2>{postTitle}</h2>
+            <div style={{marginTop: '15px'}}>{postBody}</div>
+          </div>
       }
       {isCommLoading
         ? <MyLoader/>
-        : <section className='comment__section' style={{marginTop: '25px'}}>
+        : <section className='comment__section'>
             <h2>Comments:</h2>
-            <div className='comments' style={{marginTop: '25px'}}>
+            <div className='comments'>
               {comments.map(comm => {
                 const commBody = comm.body[0].toUpperCase() + comm.body.slice(1);
                 return (
-                <div style={{marginTop: '15px', backgroundColor: "whitesmoke"}} key={comm.id}>
+                <div key={comm.id}>
                   <h5>{comm.email}</h5>
                   <div>{commBody}</div>
                 </div>)

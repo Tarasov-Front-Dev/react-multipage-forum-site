@@ -13,5 +13,5 @@ code {
 
 #root {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
 }

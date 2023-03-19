@@ -6,14 +6,15 @@ import Login from "../pages/Login";
 import { Navigate } from "react-router-dom";
 
 export const privateRoutes = [
-  {path: 'react-multipage-forum-site/', element: <Posts/>},
-  {path: 'react-multipage-forum-site/about', element: <About/>},
-  {path: 'react-multipage-forum-site/posts', element: <Posts/>},
-  {path: 'react-multipage-forum-site/posts/:id', element: <PostIdPage/>},
-  {path: 'react-multipage-forum-site/*', element: <Error/>},
+  {path: '/', element: <Posts/>},
+  {path: '/login', element: <Navigate to='/posts' replace={true}/>},
+  {path: '/about', element: <About/>},
+  {path: '/posts', element: <Posts/>},
+  {path: '/posts/:id', element: <PostIdPage/>},
+  {path: '/*', element: <Error/>},
 ]
 
 export const publicRoutes = [
-  {path: 'react-multipage-forum-site/login', element: <Login/>},
-  {path: 'react-multipage-forum-site/*', element:<Login/>}
+  {path: '/login', element: <Login/>},
+  {path: '/*', element:<Login/>}
 ]
