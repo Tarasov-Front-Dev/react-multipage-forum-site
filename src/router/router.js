@@ -6,6 +6,7 @@ import Login from "../pages/Login";
 
 export const privateRoutes = [
   {path: 'tarasov-front-dev.github.io/', element: <Login/>},
+  {path: 'tarasov-front-dev.github.io/react-multipage-forum-site/', element: <Login/>},
   {path: 'tarasov-front-dev.github.io/about', element: <About/>},
   {path: 'tarasov-front-dev.github.io/posts', element: <Posts/>},
   {path: 'tarasov-front-dev.github.io/posts/:id', element: <PostIdPage/>},
