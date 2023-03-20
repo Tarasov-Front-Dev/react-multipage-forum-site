@@ -64,12 +64,16 @@ const PostItem = function(props) {
           }}          
           className='upvote'
         >Like!</button>
-        <button 
-          onClick={(e) => {
-            props.remove(props.post)
-          }}        
-          className='remove'
-        >Delete</button>
+        {!!ref?.current?.className.includes('post-enter') ? 
+          <button 
+            onClick={(e) => {
+              props.remove(props.post)
+            }}        
+            className='remove'
+          >Delete</button>
+            :
+          false
+        }
         {isFavorite
           ? <p 
           className="like"

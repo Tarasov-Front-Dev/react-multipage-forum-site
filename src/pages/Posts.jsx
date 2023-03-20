@@ -15,7 +15,7 @@ import MyPagination from './../components/UI/MyPagination/MyPagination';
 const Posts = function() {
   const [options, setOptions] = useState([
     // {name: 'date', value: 'date', description: 'By date ↑'},
-    {name: 'id', value: 'id', description: 'By order ↓'},
+    {name: 'id', value: 'id', description: 'By default ↓'},
     {name: 'title', value: 'title', description: 'By title ↓'},
     {name: 'body', value: 'body', description: 'By body ↓'},
   ]);
