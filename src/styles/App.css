@@ -385,12 +385,58 @@ main {
 
 /*********** About ***********/
 
-.about__h1 {
-  margin-top: 25px;
-  text-align: center;
-  color: grey;
+.about__article {
+  text-align: justify;
 }
 
+.about__article a {
+  text-decoration: none;
+}
+
+.about__article h1,
+.about__article h2 {
+  margin-top: 20px;
+  margin-bottom: 7px;
+}
+
+.about__article p,
+.about__article ul {
+  margin-left: 10px;
+}
+
+.about__article li {
+  margin-bottom: 3px;
+  margin-left: 20px;
+}
+
+.about__article hr {
+  margin: 0 0 7px 0;
+  padding: 0;
+  width: 100%;
+  border-color: rgba(245, 245, 245, 0.377);
+}
+
+
+.about__article .about__listItem {  
+  margin-bottom: 7px;
+}
+
+.about__listItem span {
+  padding: 0 10px;
+  background-color: hsla(213, 100%, 61%, 0.261);
+  border-radius: 6px;
+}
+
+.about__article code {
+  display: inline-block;
+  padding: 2px 7px;
+  background-color: rgba(128, 128, 128, 0.357);
+  border-radius: 7px;
+}
+
+.about__article__last__p {
+  margin-top: 7px;
+}
 
 /************* Error *************/
 
