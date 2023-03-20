@@ -59,7 +59,7 @@ const About = function() {
       </ul>
       <p className='about__article__last__p'>N.B. GitHub doesn't provide correct support for Routes so you can download project and run it on your own PC to make sure that everything works just fine! Don't forget to delete homepage prop from package.json. It was added only for GitHub-pages.</p>
 
-      <h2>To run project on your own PC you need</h2>
+      <h2>To run project on your PC you should</h2>
       <hr></hr>
       <ul>
         <li>Install Node.js from <a href='https://nodejs.org/en/download'>site</a></li>
@@ -69,7 +69,7 @@ const About = function() {
         <li>Install React Transition Group using command <code>npm install react-transition-group --save</code></li>
         <li>Install React Router using command <code>npm install react-router-dom</code></li>
         <li>Install Axios using command <code>npm i axios</code></li>
-        <li>Download <code>src</code> from project and put it in <code>your-app-name</code></li>
+        <li>Download <code>public</code> and <code>src</code> from project and put it in <code>your-app-name</code></li>
         <li>You are perfect! =)</li>
       </ul>
     </div>
