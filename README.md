@@ -31,7 +31,7 @@ Site fetchs posts from remote database, sorts it and presents in selected order.
  - One PostSevice API.
  - Pagination, transitions, and other fancy and stylish features.
  
-## Project futures
+## Project features
  - Log you in and remember you (by Context.Provider). So you'll stay logged in even if you reload the page.
  - Fetch posts from [https://jsonplaceholder.typicode.com/].
  - Sort posts by title, body or id (jsonplaceholder didn't provide date at their posts, but I made sort by post.date as well).
