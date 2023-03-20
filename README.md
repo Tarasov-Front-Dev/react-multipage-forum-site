@@ -38,5 +38,12 @@ Site fetchs posts from remote database, sorts it and presents in selected order.
  - Let you write your own post, like some or delete them.
  - You can click on post and see it's comment section.
 
-N.B. GitHub doesn't provide correct support for Routes so you can download project and run it on your own PC to make sure that everything works just fine!
-Don't forget to delete homepage prop from package.json. It was added only for GitHub-pages.
+## To run project on your PC you should
+ - Install Node.js from [https://nodejs.org/en/download]
+ - Install npm using command `npm install -g npm`
+ - Install react using command `npx create-react-app your-app-name` and then `cd your-app-name`
+ - Install React Transition Group using command `npm install react-transition-group --save`
+ - Install React Router using command `npm install react-router-dom`
+ - Install Axios using command `npm i axios`
+ - Download `public` and `src` from project and put it in `your-app-name`
+ - You are perfect! =)
