@@ -33,13 +33,13 @@ Site fetchs posts from remote database, sorts it and presents in selected order.
  
 ## Project features
  - Log you in and remember you (by Context.Provider). So you'll stay logged in even if you reload the page.
- - Fetch posts from [https://jsonplaceholder.typicode.com/].
+ - Fetch posts from https://jsonplaceholder.typicode.com/.
  - Sort posts by title, body or id (jsonplaceholder didn't provide date at their posts, but I made sort by post.date as well).
  - Let you write your own post, like some or delete them.
  - You can click on post and see it's comment section.
 
 ## To run project on your PC you should
- - Install Node.js from [https://nodejs.org/en/download]
+ - Install Node.js from https://nodejs.org/en/download
  - Install npm using command `npm install -g npm`
  - Install react using command `npx create-react-app your-app-name` and then `cd your-app-name`
  - Install React Transition Group using command `npm install react-transition-group --save`
