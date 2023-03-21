@@ -8,7 +8,7 @@ Site fetchs posts from remote database, sorts it and presents in selected order.
  - [React](https://react.dev) (v18.2.0)
  - [Axios](https://github.com/axios/axios/) (v1.3.4)
  - [React Router Dom](https://reactrouter.com/) (v6.4)
- - [React Transition Group](https://reactcommunity.org/react-transition-group/)(v4.4.5)
+ - [React Transition Group](https://reactcommunity.org/react-transition-group/) (v4.4.5)
  - Custom hooks (like useFetching, usePosts, useSortedPosts)
 
 ## You can see in project
