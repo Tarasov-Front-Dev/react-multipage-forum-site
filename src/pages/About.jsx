@@ -12,10 +12,11 @@ const About = function() {
       <h2>In project was used</h2>
       <hr></hr>
       <ul>
-        <li>All standart React hooks (exc. useCallback)</li>
-        <li><a target={'_blank'} href='https://github.com/axios/axios'>Axios</a></li>
-        <li><a target={'_blank'} href='https://reactrouter.com/'>React Router Dom</a></li>
-        <li><a target={'_blank'} href='https://reactcommunity.org/react-transition-group/'>React Transition Group</a></li>
+        <li><a target={'_blank'} href='https://nodejs.org/'>Node.js</a> (v18.15.0)</li>
+        <li><a target={'_blank'} href='https://react.dev/'>React</a> (v18.2.0)</li>
+        <li><a target={'_blank'} href='https://github.com/axios/axios'>Axios</a> (v1.3.4)</li>
+        <li><a target={'_blank'} href='https://reactrouter.com/'>React Router Dom</a> (v6.4)</li>
+        <li><a target={'_blank'} href='https://reactcommunity.org/react-transition-group/'>React Transition Group</a> (v4.4.5)</li>
         <li>Custom hooks (like useFetching, usePosts, useSortedPosts)</li>
       </ul>
 
