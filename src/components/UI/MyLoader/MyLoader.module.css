@@ -1,4 +1,6 @@
 .loader {
+  position: relative;
+  top: 20px;
   width: 70px;
   height: 70px;
   border-radius: 50%;

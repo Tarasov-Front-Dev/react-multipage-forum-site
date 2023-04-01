@@ -14,8 +14,10 @@ const MyNavbar = () => {
   return (
     <div className={css.navbar}>
       <div className={css.navbar__links}>
-        <Link to='/posts'>Posts</Link>
-        <Link to='/about'>About</Link>
+        <ul>
+          <li><Link to='/posts'>Posts</Link></li>
+          <li><Link to='/about'>About</Link></li>
+        </ul>
       </div>
       {isAuth
         ? <Link
