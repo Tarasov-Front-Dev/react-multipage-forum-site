@@ -47,13 +47,11 @@ const PostIdPage = function() {
               {comments.map(comm => {
                 const commBody = comm.body[0].toUpperCase() + comm.body.slice(1);
                 return (
-                  <>
-                    <div key={comm.id}>
-                      <h5>{comm.email}</h5>
-                      <div>{commBody}</div>                  
-                    </div>
+                  <div key={comm.id}>
+                    <h5>{comm.email}</h5>
+                    <div>{commBody}</div>
                     <hr className='postid__hr'></hr>
-                  </>
+                  </div>
                 )
               })}
             </div>

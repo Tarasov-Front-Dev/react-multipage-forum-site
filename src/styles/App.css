@@ -1,3 +1,8 @@
+@font-face {
+	font-family: 'Montserrat'; 
+	src: url(./fonts/Montserrat-Bold.ttf); 
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -22,9 +27,9 @@ hr {
   margin: 20px 0;
 }
 
-.postid__hr:last-of-type {
+/* .postid__hr:last-of-type {
   display: none;
-}
+} */
 
 textarea,
 input,
@@ -366,6 +371,7 @@ main {
 
 .post__id__page {
   max-width: 600px;
+  min-width: 425px;
   margin: 115px auto;
 }
 
@@ -396,6 +402,10 @@ main {
 
 .comments > div {
   margin-bottom: 10px;
+}
+
+.comments > div:last-of-type hr {
+  display: none;
 }
 
 /*********** About ***********/
@@ -459,4 +469,22 @@ main {
   margin-top: 25px;
   text-align: center;
   color: grey;
+}
+
+
+
+
+@media (min-width: 1024px) {
+  .post__id__page {
+    max-width: 800px;
+  }  
+}
+
+
+@media (max-width: 767.08px) {
+  .post__id__page {
+    max-width: 600px;
+    margin: 105px auto;
+    padding: 0 10px;
+  }
 }

@@ -19,12 +19,15 @@ const MyNavbar = () => {
           <li><Link to='/about'>About</Link></li>
         </ul>
       </div>
+      <div className={css.navbar__slogan}>React app by Tarasov</div>
       {isAuth
-        ? <Link
-            to='/login' 
-            onClick={logout}
-            className={css.logout}
-          >LogOut</Link>
+        ? <div className={css.logout__wrapper}>
+            <Link
+              to='/login' 
+              onClick={logout}
+              className={css.logout}
+            >LogOut</Link>
+          </div>
         : false
       }        
     </div>
