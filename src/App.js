@@ -6,8 +6,10 @@ import AppRouter from './components/AppRouter';
 import { AuthContext } from './context/context';
 
 const App = function() {
-  let [isAuth, setIsAuth] = useState(false);
-  let [isLoading, setIsLoading] = useState(true);
+  const [isAuth, setIsAuth] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+  const main = document.querySelector('main');
+  
 
   useEffect(() => {
     if (localStorage.getItem('auth')) {

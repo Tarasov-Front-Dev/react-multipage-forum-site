@@ -34,7 +34,7 @@ const PostIdPage = function() {
       {isLoading
         ? <MyLoader/>
         : <div className='post__section'>
-            <h1>Post:</h1>
+            <h1>Original Post:</h1>
             <h2>{postTitle}</h2>
             <div style={{marginTop: '15px'}}>{postBody}</div>
           </div>
@@ -47,10 +47,14 @@ const PostIdPage = function() {
               {comments.map(comm => {
                 const commBody = comm.body[0].toUpperCase() + comm.body.slice(1);
                 return (
-                <div key={comm.id}>
-                  <h5>{comm.email}</h5>
-                  <div>{commBody}</div>
-                </div>)
+                  <>
+                    <div key={comm.id}>
+                      <h5>{comm.email}</h5>
+                      <div>{commBody}</div>                  
+                    </div>
+                    <hr className='postid__hr'></hr>
+                  </>
+                )
               })}
             </div>
           </section>

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Counter from './../components/Counter';
 import PostForm from './../components/PostForm';
 import PostFilter from './../components/PostFilter';
 import PostList from './../components/PostList';
@@ -28,15 +27,16 @@ const Posts = function() {
   const [totalCount, setTotalCount] = useState(0);
   const [totalPages, setTotalPages] = useState(1);
   const searchedAndSortedPosts = usePosts(posts, filter.sort, filter.query);
-  const [fetchPosts, isPostsLoading, postError] = useFetching(async () => {
+  const [fetchPosts, isPostsLoading, postError] = useFetching(async (limit) => {
     const response = await PostService.getAll(limit, page)
+    console.log(response.headers)
     setTotalCount(response.headers['x-total-count'])
     setTotalPages(getPagesCount(totalCount, limit))
     setPosts(response.data)
   })
 
   useEffect(() => {
-    fetchPosts()    
+    fetchPosts(limit)
   }, [page])
 
   const createPost = (newPost) => {
@@ -50,8 +50,6 @@ const Posts = function() {
   
   return (
     <div className = "App">
-      {/* <Counter/> */}
-      {/* <hr/> */}
       <main>
         <MyButton 
           onClick={() => setModal(true)}

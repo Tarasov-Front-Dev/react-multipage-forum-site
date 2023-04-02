@@ -18,6 +18,14 @@ hr {
   margin: 40px 0;
 }
 
+.postid__hr {
+  margin: 20px 0;
+}
+
+.postid__hr:last-of-type {
+  display: none;
+}
+
 textarea,
 input,
 button,
@@ -138,7 +146,8 @@ form button:active {
 
 /*************** Main ****************/
 
-main {  
+main {
+  width: 600px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -357,7 +366,7 @@ main {
 
 .post__id__page {
   max-width: 600px;
-  margin: 15px auto;
+  margin: 115px auto;
 }
 
 .post__id__page > * {
@@ -368,8 +377,17 @@ main {
   box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.2), 0 1px 2px hsla(0, 0%, 0%, 0.2);
 }
 
+.post__section {
+  margin-bottom: 40px;
+  padding: 20px 40px 40px;
+}
+
 .post__section h1 {
   margin-bottom: 10px;
+}
+
+.comment__section {
+  padding: 30px 40px;
 }
 
 .comment__section h2 {
