@@ -74,6 +74,7 @@ button:active {
 /**************** App ****************/
 
 .App {
+  margin-top: 100px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -120,6 +121,13 @@ form {
   flex-flow: column nowrap;
   /* align-items: start; */
   /* align-self: flex-start; */
+}
+
+form textarea {
+  margin: 3px 15px 3px 0;
+  padding: 0 10px;
+  height: 150px;
+  rows: 5;
 }
 
 form input {

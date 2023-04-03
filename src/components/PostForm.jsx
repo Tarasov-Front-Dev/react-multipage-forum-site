@@ -40,11 +40,12 @@ function PostForm({create}) {
       placeholder = 'Post title'
       onInput = {(evt) => setPost({...post, title: evt.target.value})}
     />
-    <MyInput
+    <textarea
       value = {post.body}
       name = 'body'
       type = 'text' 
       placeholder = 'Post description'
+      spellcheck = 'true'
       onInput = {(evt) => setPost({...post, body: evt.target.value})}
     />
     <MyButton name = 'submit' disabled>Publish Post</MyButton>
